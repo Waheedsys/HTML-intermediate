@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-part-3-challenge</title>
+</head>
+
+<body>
+    <!-- Creating form consisting of  name , job, list of books, comment area and a submit button -->
+    <form>
+        <!-- name and job -->
+        <h3>name-and-job</h3>
+        <input type="text" placeholder="name">
+        <br>
+        <input type="text" placeholder="job">
+        <br>
+
+        <!-- list of books -->
+        <h3>list-of-books</h3>
+        <select name="books" id="books">
+            <option value="naria">naria</option>
+            <option value="hobbit">hobbit</option>
+            <option value="rich-dad-poor-dad">rich-dad-poor-dad</option>
+            <option value="lord-of-ring">lord-of-ring</option>
+        </select>
+
+        <!-- data input type list -->
+
+        <label for="browser">Choose your books:</label>
+        <input list="books" name="books" id="books">
+        <datalist id="books">
+            <option value="naria">
+            <option value="hobbit">
+            <option value="rich-dad-poor-dad">
+            <option value="lord-of-ring">
+        </datalist>
+
+
+        <br>
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+
+
+        <!-- comment area -->
+        <h3>comments</h3>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <br>
+    </form>
+
+    <!-- Submit button -->
+    <button type="submit">submit</button>
+
+
+
+
+</body>
+
+</html>
